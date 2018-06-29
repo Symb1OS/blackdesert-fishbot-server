@@ -75,7 +75,7 @@ image = image[:, :, 0].reshape(1, 1, 58, 372)
 image = torch.from_numpy(image)
 
 model = Parser()
-model.load_state_dict(torch.load('/home/symbios/fishingserver/model/cpu.pt'))
+model.load_state_dict(torch.load('/usr/local/fishing-resources/model/cpu.pt'))
 model.cpu()
 model.eval()
 
