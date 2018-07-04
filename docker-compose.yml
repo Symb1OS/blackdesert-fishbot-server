@@ -24,6 +24,8 @@ services:
     restart: always
     ports: 
       - "8081:8080"
+    environment:
+      TELEGRAMM_API_KEY: 0bc852-1b0d72-4ca6e6
     links:
       - dbmysql:dbmysql
     volumes:
